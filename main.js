@@ -7,3 +7,14 @@ function lisItems(arr, numb) {
 }
 
 lisItems(['этаж', 'вагон'], 3)
+
+function mergeObjects(...obj) {
+    let res = Object.assign({}, ...obj);
+    console.log(res);
+}
+
+mergeObjects(
+    {a: 41, b:3},
+    {b: 8},
+    {a: 6},
+);
